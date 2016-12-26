@@ -1,0 +1,30 @@
+    <!--
+        /$$$$$           /$$                 /$$ /$$
+       |__  $$          | $$                | $$| $$
+          | $$  /$$$$$$ | $$   /$$ /$$   /$$| $$| $$
+          | $$ /$$__  $$| $$  /$$/| $$  | $$| $$| $$
+     /$$  | $$| $$$$$$$$| $$$$$$/ | $$  | $$| $$| $$
+    | $$  | $$| $$_____/| $$_  $$ | $$  | $$| $$| $$
+    |  $$$$$$/|  $$$$$$$| $$ \  $$|  $$$$$$$| $$| $$
+     \______/  \_______/|__/  \__/ \____  $$|__/|__/
+                                   /$$  | $$
+                                  |  $$$$$$/
+                                   \______/
+        &copy; {{ site.time | date: '%Y' }} - {{ site.data.global.author.name }}
+    -->
+<header id="nav-content" class="vertical-nav nav-white">
+
+  <div class="my-logo">
+      <a href="{{ '/' | prepend: site.baseurl }}"><img src="{{ site.cloudinary.foto }}" alt="{{ site.data.global.author.name }}" /></a>
+    </div>
+    
+    <ul class="menu nav me-nav">
+      {% for item in site.data.nav.navbar %}
+        <li class="menu-item"> <a href="{{ '/' | prepend: site.baseurl }}#{{ item.id }}"> <span>{{ item.title }}</span> <i class="fa fa-{{ item.ico }}"></i> </a>
+        </li>
+      {% endfor %}
+    </ul>
+    
+    <span class="copyright hidden-md">&copy; {{ site.time | date: '%Y' }} <a href="{{ site.data.global.url }}">{{ site.data.global.author.name }}</a> <br />Desarrollado con <a href="http://jekyllrb.com/" target="_blank">Jekyll</a>.</span>
+
+</header>

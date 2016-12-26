@@ -1,0 +1,16 @@
+navbar:
+  - id: profile
+    title: Perfil
+    ico: user
+  - id: resume
+    title: Resumen
+    ico: pencil
+  #- id: portfolio
+  #  title: Portafolio
+  #  ico: desktop
+  - id: blog
+    title: Blog
+    ico: comment
+  - id: contact
+    title: Contacto
+    ico: phone

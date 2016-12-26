@@ -1,0 +1,10 @@
+      <div class="bottom-bar">
+          <ul class="list-inline">
+            <li><i class="inline-icon icon-before-and-after text-primary fa fa-map-marker"></i>{{ site.data.global.author.direccion }}</li>
+            <li><i class="inline-icon icon-before-and-after text-primary fa fa-comment"></i><a href="mailto:{{ site.data.global.author.email }}">{{ site.data.global.author.email }}</a></li>
+            <li><i class="inline-icon icon-before-and-after text-primary fa fa-pencil"></i><a href="{{ '/blog' | prepend: site.baseurl }}" alt="Blog de {{ site.data.global.author.name }}" title="El Blog de {{ site.data.global.author.name }}">Blog</a></li>
+            <li><i class="inline-icon icon-before-and-after text-primary fa fa-shield"></i><a href="{{ site.data.global.aci.url1 }}" title="{{ site.data.global.aci.bio }}" target="_blank">{{ site.data.global.aci.name }}</a></li>
+            <li><i class="inline-icon icon-before-and-after text-primary fa fa-envelope-o"></i><a href="mailto:{{ site.data.global.aci.email }}">{{ site.data.global.aci.email }}</a></li>
+            <li><i class="inline-icon icon-before-and-after text-primary fa fa-rss"></i><a href="{{ '/feed.xml' | prepend: site.baseurl }}">RSS</a></li>
+          </ul>
+      </div>
