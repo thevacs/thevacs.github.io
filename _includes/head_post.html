@@ -1,47 +1,39 @@
-<div id="page-content">
-            <div class="page-title bottom-padded black">
-        
-                <div class="page-title-bg editable-alpha" data-alpha="20"><img src="{{ site.cloudinary.cloud_url }}{{ page.featured_image }}" alt="{{ page.title }}" title="{{ page.title }}" /></div>
-                
-                <div class="content padded dark">
-                
-                  <div class="top-bar">
-                    <div class="pull-left">
-                        <a href="{{ '/blog' | prepend: site.baseurl }}" class="btn btn-default btn-pull-up"><i class="icon-before fa fa-chevron-left"></i>Regresar</a>
-                    </div>
-                    <div class="pull-right">
-                        <h6>El Blog de {{ site.data.global.author.name }}</h6>
-                    </div>
-                  </div>
-                  
-                  <div class="padded-vertical">
-                    <span class="post-date-alt">{{ page.date | date: "%b %-d, %Y" }}</span>
-                    <h1 class="medium">{{ page.title }}</h1>
-                    <div class="post-meta pull-left">
-                                    {% if page.tags != empty %}
-                                        <span><i class="fa fa-comment"></i>
-                                        {% for tags in page.tags %}
-                                            {{ tags }}
-                                        {% endfor %}
+<section class="unpad">
+                <article>
+                    <div class="imagebg text-center height-60" data-overlay="5">
+                        <div class="background-image-holder">
+                            <img alt="{{ page.title }}" title="{{ page.title }}" src="{{ site.cloudinary.cloud_url }}{{ page.featured_image }}" />
+                        </div>
+                        <div class="container pos-vertical-center">
+                            <div class="row">
+                                <div class="col-sm-12">
+                                    <div class="article__title">
+                                        <h1>{{ page.title }}</h1>
+                                        <span>{{ page.date | date: "%b %-d, %Y" }} en </span>
+                                        <span>
+											{% if page.categories != empty %}
+												<a href="#">
+												{% for category in page.categories %}
+													{{ category }}
+												{% endfor %}
+												</a>
+											{% endif %}
                                         </span>
-                                    {% endif %}
-
-                                    {% if page.categories != empty %}
-                                        <span><i class="fa fa-tag"></i>
-                                        {% for category in page.categories %}
-                                            {{ category }}
-                                        {% endfor %}
-                                        </span>
-                                    {% endif %}  
+                                    </div>
+                                </div>
+                            </div>
+                            <!--end of row-->
+                        </div>
+                        <!--end of container-->
+                        <div class="pos-absolute pos-bottom col-xs-12 text-center">
+                            <div class="article__author">
+                                <img alt="{{ site.data.global.author.name }}" src="http://res.cloudinary.com/vacs/image/upload/w_800,h_800,c_crop,g_face,r_max/w_364//v1514320748/20748199_1637170319649287_8712754598881842075_o_f0nwns.png" />
+                                <h6 class="type--uppercase">{{ site.data.global.author.name }}</h6>
+                            </div>
+                        </div>
                     </div>
-                  </div>
-                  
-                </div>
-                  
-            </div>
-
-            <div class="container content">
-    
-              <div class="row">
-              
-                <div class="col-lg-12">
+                    <div>
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-sm-10 col-md-8 col-sm-offset-1 col-md-offset-2">
+                                    <div class="article__body">
