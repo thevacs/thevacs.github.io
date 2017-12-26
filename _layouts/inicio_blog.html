@@ -1,9 +1,16 @@
 <!DOCTYPE html>
-<html lang="es-VE">
-  {% include head.html %}
-  <body>
-      {% include header2.html %}
-      {{ content }}
-      {% include footer.html %}
-  </body>
+<html lang="es-ve">
+	{% include head.html %}
+	<body class=" ">
+		<a id="inicio"></a>
+		{% include header2.html %}
+		<div class="main-container">
+			{{ content }}
+			{% include footer.html %}
+		</div>
+		<a class="back-to-top inner-link" href="#start" data-scroll-class="100vh:active">
+            <i class="stack-interface stack-up-open-big"></i>
+        </a>
+		{% include js.html %}
+	</body>
 </html>

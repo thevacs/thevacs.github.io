@@ -1,91 +1,57 @@
 ---
 layout: inicio_blog
-title: El Blog de Juan Rivas
+title: El blog de Juan
 ---
 
-<div id="page-content">
 
-	<div class="blog-slider-holder black dark">
-    
-      <div class="top-bar blog-slider-top-bar">
-        <div class="pull-left">
-            <a href="{{ '/' | prepend: site.baseurl }}" class="btn btn-default btn-pull-up"><i class="icon-before fa fa-chevron-left"></i>Página Principal</a>
-        </div>
-        <div class="pull-right">
-            <h6>El Blog de {{ site.data.global.author.name }}</h6>
-        </div>
-      </div>
-          
-      <div class="blog-slider">
-      
-        {% for post in paginator.posts limit:3 %}
-	        <article class="blog-slide content padded">
-	          <div class="blog-slide-photo editable-alpha" data-alpha="20"><img src="{{ site.cloudinary.cloud_url }}{{ post.featured_image }}" alt="{{ post.title }}" title="{{ post.title }}" /></div>
-	          <div class="blog-slide-content padded-vertical">
-	            <span class="post-date-alt">{{ post.date | date: "%b %-d, %Y" }}</span>
-	            <h1 class="medium"><a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></h1>
-	            <a href="{{ post.url | prepend: site.baseurl }}" title="Link permanente a: {{ post.title }}" class="btn btn-primary">Leer Más</a>
-	          </div>
-	        </article>
-  		{% endfor %}
-        
-          
-      </div>
-          
-    </div>
-    
-    <div class="content padded">
-    
-      <div class="row">
 
-      {% for post in paginator.posts %}
-          
-        <article class="post col-md-6">
-            <div class="post-image"><img src="{{ site.cloudinary.cloud_url }}{{ post.featured_image }}" alt="{{ post.title }}" title="{{ post.title }}" /></div>
-              <div class="post-content-holder">
-                  <div class="post-content">
-                      <div class="post-info clearfix">
-                          <span class="post-date">{{ post.date | date: "%b %-d, %Y" }}</span>
-                          <div class="post-meta">
-									{% if post.tags != empty %}
-                                  		<span><i class="fa fa-comment"></i>
-							            {% for tags in post.tags %}
-							                {{ tags }}
-							            {% endfor %}
-							            </span>
-							        {% endif %}
 
-                                  	{% if post.categories != empty %}
-                                  		<span><i class="fa fa-tag"></i>
-							            {% for category in post.categories %}
-							                {{ category }}
-							            {% endfor %}
-							            </span>
-							        {% endif %}                          
-							        </div>
-                      </div>
-                      <div class="post-text">
-                          <h3><a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></h3>
-                          <p class="lead">{{ post.lead_text }}</p>
-                          <a href="{{ post.url | prepend: site.baseurl }}" title="Link permanente a: {{ post.title }}" class="btn btn-primary btn-sm">Leer Más</a>
-                      </div>
-                  </div>
-              </div>
-        </article>
+<section class="space--sm">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-sm-12">
+                            <div class="masonry">
+                                <div class="masonry-filter-container">
+                                    <span>Categorías:</span>
+                                    <div class="masonry-filter-holder">
+                                        <div class="masonry__filters" data-filter-all-text="Todas las categorías"></div>
+                                    </div>
+                                </div>
+                                <hr>
+                                <div class="row">
+                                    <div class="masonry__container">
+                                        <div class="masonry__item col-md-4 col-sm-6"></div>
+										
+										 {% for post in paginator.posts %}
+											 <div class="masonry__item col-md-4 col-sm-6" data-masonry-filter="{{ post.categories }}">
+												<article class="feature feature-1">
+													<a href="{{ post.url | prepend: site.baseurl }}" class="block">
+														<img alt="{{ post.title }}" title="{{ post.title }}" src="{{ site.cloudinary.cloud_url }}{{ post.featured_image }}" />
+													</a>
+													<div class="feature__body boxed boxed--border">
+														<span>{{ post.date | date: "%b %-d, %Y" }}</span>
+														<h5>{{ post.title }}</h5>
+														<a href="{{ post.url | prepend: site.baseurl }}" title="Link permanente a: {{ post.title }}">
+															Leer Más
+														</a>
+													</div>
+												</article>
+											</div>
+                                        <!--end item-->
+										{% endfor %}
+                                      
+                                    </div>
+                                    <!--end of masonry container-->
+                                </div>
+								
+                                <!--end row-->
+								{% include pagination.html %}
+                            </div>
+                            <!--end masonry-->
+                        </div>
+                    </div>
+                    <!--end of row-->
+                </div>
+                <!--end of container-->
+            </section>
 
-     {% endfor %}   
-        
-        
-        
-      </div>
-
-      <div class="row">
-
-        {% include pagination.html %}
-  
-      </div>
-      {% include bottom-bar2.html %}
-        
-    </div>
-	
-</div>
