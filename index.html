@@ -1,407 +1,49 @@
 ---
 layout: inicio
 ---
-<div id="page-content">
-
-	<section id="profile" class="black">
-    
-    	<div id="profile-bg" class="editable-alpha" data-alpha="40"><img src="{{ site.cloudinary.bg1 }}" alt="{{ site.data.global.author.name }}" /></div>
-    
-    	<div class="content padded dark">
-        
-        	<div class="top-bar">
-            
-            	<div class="pull-left">
-                	<span class="hiddend-sm hidden-xs">Visitas mis redes sociales. &nbsp; &nbsp; </span>
-                    <ul class="social-icons si-pull-up">
-                        <li><a href="{{ site.data.global.author.facebook }}" target="_blank"><i class="fa fa-facebook"></i></a></li>
-                        <li><a href="{{ site.data.global.author.twitter }}" target="_blank"><i class="fa fa-twitter"></i></a></li>
-                        <li><a href="{{ site.data.global.author.github }}" target="_blank"><i class="fa fa-github"></i></a></li>
-                        <li><a href="{{ site.data.global.author.linkedin }}" target="_blank"><i class="fa fa-linkedin"></i></a></li>
-                    </ul>
+<section class="cover height-100 imagebg" data-overlay="4">
+                <div class="background-image-holder">
+                    <img alt="background" src="{{ "img/recruitment-1.jpg" | prepend: site.baseurl }}" />
                 </div>
-                
-                <div class="pull-right">
-                	<a href="{{ '/blog' | prepend: site.baseurl }}" alt="Blog de {{ site.data.global.author.name }}" title="El Blog de {{ site.data.global.author.name }}" class="hidden-xs">El Blog de {{ site.data.global.author.name }}</a>
-                </div>
-                
-            </div>
-        
-            <div class="profile-content">
-            	<h1 class="short">{{ site.data.global.author.name }}</h1>
-                <h5>{{ site.data.global.author.bio }}</h5>
-                <a href="#contact" class="btn btn-primary">Contácteme</a>
-            </div>
-            
-            {% include profile-bottom-bar.html  %}
-          
-                    
-        </div>    	
-        
-	</section>
-
-  	<section id="resume">
-      
-      	<div class="content dimmed-effect padded-short">
-          	
-              <div class="row">
-              
-                <div class="col-lg-4">
-                
-	                <div class="resume-box animated slide-in-top">
-		                    <i class="title-icon text-blue flaticon-speech43"></i>
-		                    <h3>¿Quién soy?</h3>
-							<p class="lead">Soy un aprendiz de todo y conocedor de nada, intrépido, investigo todo lo que me parece interesante y de ser necesario lo domino, siempre ando haciendo algún proyecto o mejorando cosas, aprecio mucho el diseño pero no me gustar diseñar.</p>
-			                <p>En mi trabajo diario, y en buena parte de mi tiempo libre, dedico todas las horas que puedo a formarme para profundizar en algunas de las herramientas que ya conozco y aprender y descubrir otras nuevas.</p>		                    
-			                <a href="#contact" class="btn btn-default">Contácteme</a>
-	                </div>
-                  
-                	<div class="resume-box animated slide-in-left appear-second">
-	                    <i class="title-icon text-yellow flaticon-document56"></i>
-	                    <h3>Educación & Trabajo</h3>
-	                    <div class="timeline">
-	                    	<div class="timeline-event te-yellow">
-		                        <div class="event-date">2011 - Mayo 2015</div>
-		                        <div class="event-name">T.S.U en Informática</div>
-		                        <div class="event-description">Instituto Universitario de Tecnología de Administración Industrial, Region Capital, Venezuela</div>
-		                    </div>
-	                      <div class="timeline-event te-yellow">
-	                        <div class="event-date">Junio 2015 - Diciembre 2015</div>
-	                        <div class="event-name">Analista de Programador de Sistemas</div>
-	                        <div class="event-description">Universidad Simón Bolívar, Vargas, Venezuela</div>
-	                      </div>
-	                      <div class="timeline-event te-yellow">
-	                        <div class="event-date">Abril 2016 - Diciembre 2016</div>
-	                        <div class="event-name">Consultor</div>
-	                        <div class="event-description">Logics Studio, Caracas, Venezuela</div>
-	                      </div>
-	                      <div class="timeline-event te-yellow">
-	                        <div class="event-date">Mayo 2016 - Diciembre 2016</div>
-	                        <div class="event-name">Desarrollador PL/SQL</div>
-	                        <div class="event-description">Bancrecer, Altamira, Caracas, Venezuela</div>
-	                      </div>
-	                      <div class="timeline-event te-yellow">
-	                        <div class="event-date">Mayo 2016 - Actual</div>
-	                        <div class="event-name">Desarrollador Back-End / Webmaster</div>
-	                        <div class="event-description">Dientito Sano, Bello Monte, Caracas, Venezuela</div>
-	                      </div>
-	                      <div class="timeline-event te-yellow">
-	                        <div class="event-date">Noviembre 2016 - Actual</div>
-	                        <div class="event-name">Analista de Sistemas</div>
-	                        <div class="event-description">Fundacaracas, La Candelaria, Caracas, Venezuela</div>
-	                      </div>
-	                    </div>
-	                </div>
-                  
-                </div>
-            	  
-                <div class="col-md-6 col-lg-4">
-                
-                  <div class="resume-box animated slide-in-right">
-                    <i class="title-icon text-red flaticon-mouse19"></i>
-                    <h3>Especialidades</h3>
-                    <div class="speciality">
-                    	<i class="speciality-icon text-red flaticon-cloud82"></i>
-                      <div class="speciality-content">
-                      	<h5 class="short">Cloud Hosting</h5>
-                          <p class="speciaity-description">Fácil, confiable y muy rápido.</p>
-                      </div>
-                    </div>
-                    <div class="speciality">
-                    	<i class="speciality-icon text-red flaticon-bulb11"></i>
-                      <div class="speciality-content">
-                      	<h5 class="short">Desarrollo Web</h5>
-                          <p class="speciaity-description">Excelentes, adaptables, diseños de sitios web modernos.</p>
-                      </div>
-                    </div>
-                    <div class="speciality">
-                    	<i class="speciality-icon text-red flaticon-codings1"></i>
-                      <div class="speciality-content">
-                      	<h5 class="short">Desarrollo Back-End de aplicaciones</h5>
-                          <p class="speciaity-description">Código limpio y optimizado.</p>
-                      </div>
-                    </div>
-                    <div class="speciality">
-	                  	<i class="speciality-icon text-red flaticon-plugin1"></i>
-	                    <div class="speciality-content">
-	                    	<h5 class="short">RESTful API</h5>
-	                        <p class="speciaity-description">Aplicaciones API's con consultas RESTful</p>
-	                    </div>
-	                  </div>
-                    <div class="speciality">
-                    	<i class="speciality-icon text-red flaticon-speech43"></i>
-                      <div class="speciality-content">
-                      	<h5 class="short">SMS API's</h5>
-                          <p class="speciaity-description">Aplicaciones que envía SMS mediante API's</p>
-                      </div>
-                    </div>
-                  </div>
-                  
-                  
-                	<div class="resume-box animated slide-in-bottom">
-                    <i class="title-icon text-violet flaticon-joystick4"></i>
-                    <h3>Pasatiempos e intereses</h3>
-                    <ul class="list-group">
-                      <li class="list-group-item">Cocinar</li>
-                      <li class="list-group-item">Béisbol</li>
-                      <li class="list-group-item">Música Electrónica</li>
-                      <li class="list-group-item">Electricidad</li>
-                      <li class="list-group-item">Albañilería</li>
-                    </ul>
-                  </div>
-                  
-                </div>
-                
-                <div class="col-md-6 col-lg-4">
-
-                <div class="resume-box animated slide-in-right appear-second">
-	                    <i class="title-icon text-green flaticon-open79"></i>
-	                    <h3>Habilidades</h3>
-
-	                    <div class="skill">
-	                    	<span class="skill-name">PHP (POO)</span>
-	                      <div class="skill-bar sb-green">
-	                      	<div class="skill-rate-on"></div>
-	                          <div class="skill-rate-on"></div>
-	                          <div class="skill-rate-on"></div>
-	                          <div class="skill-rate-on"></div>
-	                          <div class="skill-rate-off"></div>
-	                      </div>
-	                    </div>
-
-	                    <div class="skill">
-	                    	<span class="skill-name">Python</span>
-	                      <div class="skill-bar sb-green">
-	                      	<div class="skill-rate-on"></div>
-	                          <div class="skill-rate-on"></div>
-	                          <div class="skill-rate-off"></div>
-	                          <div class="skill-rate-off"></div>
-	                          <div class="skill-rate-off"></div>
-	                      </div>
-	                    </div>
-
-	                    <div class="skill">
-	                    	<span class="skill-name">Ruby</span>
-	                      <div class="skill-bar sb-green">
-	                      	<div class="skill-rate-on"></div>
-	                          <div class="skill-rate-off"></div>
-	                          <div class="skill-rate-off"></div>
-	                          <div class="skill-rate-off"></div>
-	                          <div class="skill-rate-off"></div>
-	                      </div>
-	                    </div>
-
-	                    <div class="skill">
-	                    	<span class="skill-name">Transact-SQL / PL/SQL</span>
-	                      <div class="skill-bar sb-green">
-	                      	<div class="skill-rate-on"></div>
-	                          <div class="skill-rate-on"></div>
-	                          <div class="skill-rate-on"></div>
-	                          <div class="skill-rate-off"></div>
-	                          <div class="skill-rate-off"></div>
-	                      </div>
-	                    </div>
-
-	                    
-	                    <div class="skill">
-	                    	<span class="skill-name">HTML - CSS</span>
-	                      <div class="skill-bar sb-green">
-	                      	<div class="skill-rate-on"></div>
-	                          <div class="skill-rate-on"></div>
-	                          <div class="skill-rate-on"></div>
-	                          <div class="skill-rate-off"></div>
-	                          <div class="skill-rate-off"></div>
-	                      </div>
-	                    </div>
-
-	                    <div class="skill">
-	                    	<span class="skill-name">Javascript - Query</span>
-	                      <div class="skill-bar sb-green">
-	                      	<div class="skill-rate-on"></div>
-	                          <div class="skill-rate-on"></div>
-	                          <div class="skill-rate-on"></div>
-	                          <div class="skill-rate-off"></div>
-	                          <div class="skill-rate-off"></div>
-	                      </div>
-	                    </div>
-
-	                    <div class="skill">
-	                    	<span class="skill-name">MySQL - MSSQL - PostgreSQL - Sybase - Oracle</span>
-	                      <div class="skill-bar sb-green">
-	                      	<div class="skill-rate-on"></div>
-	                          <div class="skill-rate-on"></div>
-	                          <div class="skill-rate-on"></div>
-	                          <div class="skill-rate-on"></div>
-	                          <div class="skill-rate-off"></div>
-	                      </div>
-	                    </div>
-
-	                    <div class="skill">
-	                    	<span class="skill-name">SysAdmin (Linux - Windows)</span>
-	                      <div class="skill-bar sb-green">
-	                      	<div class="skill-rate-on"></div>
-	                          <div class="skill-rate-on"></div>
-	                          <div class="skill-rate-on"></div>
-	                          <div class="skill-rate-off"></div>
-	                          <div class="skill-rate-off"></div>
-	                      </div>
-	                    </div>
-
-	                    <div class="skill">
-	                    	<span class="skill-name">Adobe Photoshop</span>
-	                      <div class="skill-bar sb-green">
-	                      	<div class="skill-rate-on"></div>
-	                          <div class="skill-rate-on"></div>
-	                          <div class="skill-rate-on"></div>
-	                          <div class="skill-rate-off"></div>
-	                          <div class="skill-rate-off"></div>
-	                      </div>
-	                    </div>
-
-	                    <div class="skill">
-	                    	<span class="skill-name">RESTful - Servicio WEB</span>
-	                      <div class="skill-bar sb-green">
-	                      	<div class="skill-rate-on"></div>
-	                          <div class="skill-rate-on"></div>
-	                          <div class="skill-rate-on"></div>
-	                          <div class="skill-rate-off"></div>
-	                          <div class="skill-rate-off"></div>
-	                      </div>
-	                    </div>
-
-	                    <div class="skill">
-	                    	<span class="skill-name">cPanel & WHM / WHMCS</span>
-	                      <div class="skill-bar sb-green">
-	                      	<div class="skill-rate-on"></div>
-	                          <div class="skill-rate-on"></div>
-	                          <div class="skill-rate-on"></div>
-	                          <div class="skill-rate-on"></div>
-	                          <div class="skill-rate-off"></div>
-	                      </div>
-	                    </div>
-
-	            </div>
-                
-                 
-                  
-                </div>
-                
-              </div>
-              
-          </div>
-      
-    </section>
-
-    <section id="blog">
-    
-    	<div class="content padded">
-        
-          <div  class="row">
-          
-            <div class="col-lg-12">
-                
-              <div class="post-carousel animated slide-in-top">
-                {% for post in site.posts limit:6 %}  
-                  <article class="post post-carousel-item">
-                    <div class="post-image"><img src="{{ site.cloudinary.cloud_url }}{{ post.featured_image }}" alt="{{ post.title }}" title="{{ post.title }}" /></div>
-                    <div class="post-content-holder">
-                        <div class="post-content">
-                            <div class="post-info clearfix">
-                                <span class="post-date">{{ post.date | date: "%B %-d, %Y" }}</span>
-                                <div class="post-meta">
-                                  {% if post.tags != empty %}
-                                  		<span><i class="fa fa-comment"></i>
-							            {% for tags in post.tags %}
-							                {{ tags }}
-							            {% endfor %}
-							            </span>
-							        {% endif %}
-
-                                  	{% if post.categories != empty %}
-                                  		<span><i class="fa fa-tag"></i>
-							            {% for category in post.categories %}
-							                {{ category }}
-							            {% endfor %}
-							            </span>
-							        {% endif %}
-                                </div>
-                            </div>
-                            <div class="post-text">
-                                <h3><a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></h3>
-                                <p class="lead">{{ post.lead_text }}</p>
-                                <a href="{{ post.url | prepend: site.baseurl }}" title="Link permanente a: {{ post.title }}" class="btn btn-primary btn-sm">Leer Más</a>
-                            </div>
+                <div class="container pos-vertical-center">
+                    <div class="row">
+                        <div class="col-sm-8 col-md-5">
+                            <h1>
+                                {{ site.data.global.author.name }}
+                            </h1>
+                            <ul class="social-list list-inline list--hover">
+                                <li>
+                                    <a href="{{ site.data.global.author.twitter }}" target="_blank">
+                                        <i class="socicon socicon-twitter icon icon--xs"></i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="{{ site.data.global.author.facebook }}" target="_blank">
+                                        <i class="socicon socicon-facebook icon icon--xs"></i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="{{ site.data.global.author.github }}" target="_blank">
+                                        <i class="socicon socicon-github icon icon--xs"></i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="{{ site.data.global.author.instagram }}" target="_blank">
+                                        <i class="socicon socicon-instagram icon icon--xs"></i>
+                                    </a>
+                                </li>
+                            </ul>
+                            <p class="lead">
+								{{ site.data.global.author.bio }}
+                            </p>
+                            <a class="btn btn--primary type--uppercase" href="#">
+                                <span class="btn__text">
+                                    Ponerse en contacto
+                                </span>
+                            </a>
                         </div>
                     </div>
-                  </article>
-                {% endfor %}  
-              </div> 
-               
-              <div class="end-of-section">
-          
-                <div class="pull-left">
-                  <span class="hiddend-sm hidden-xs">¿Le gustaría ver todos mis mensajes? &nbsp; &nbsp;</span><a href="{{ '/blog' | prepend: site.baseurl }}" class="btn btn-black btn-sm">¡Visitar mi página del blog!</a>
+                    <!--end of row-->
                 </div>
-                 
-                <div class="post-carousel-control">
-                  <a class="post-carousel-prev" href="#">Anterior</a>
-                  <a class="post-carousel-next" href="#">Siguiente</a>
-                </div>
-              
-              </div>
-                
-            </div>
-          
-          </div>
-            
-        </div>
-        
-    </section>
-    <!-- Blog / End -->
-
-    <section id="contact" class="black">
-    
-      <div id="google-map" class="animated zoom-out"><img src="{{ site.cloudinary.bg2 }}" /></div>
-        
-        <div class="content contact-content padded dark animated slide-in-left">
-          <i class="title-icon text-primary flaticon-speech43"></i>
-          <h2>Contácteme</h2>
-            <ul class="list-unstyled list-unstyled-icons">
-              <li><i class="inline-icon icon-before-and-after text-primary fa fa-map-marker"></i>Camuri Grande<br />Vargas<br />Venezuela</li>
-              <li><i class="inline-icon icon-before-and-after text-primary fa fa-comment"></i><a href="mailto:{{ site.author.email }}">{{ site.data.global.author.email }}</a></li>
-            </ul>
-            <br/><br/>
-            <p><a href="{{ site.cloudinary.cv_pdf }}" class="btn btn-primary">Descargar mi Currículum Vitae</a></p>
-            {% include bottom-bar.html  %}
-
-        </div>
-        
-        <div id="contact-form-holder" class="dark">
-          <div class="contact-form-trigger animated slide-in-right appear-second"><i class="flaticon-mail21"></i></div>
-          <form role="form" id="contact-form" method="post">
-            <div class="form-group">
-              <label>Nombre:</label>
-              <input type="text" class="form-control" id="nombre"  name="nombre" placeholder="Nombre" required>
-            </div>
-            <div class="form-group">
-              <label>Teléfono:</label>
-              <input type="text" class="form-control" id="cell"  name="cell" placeholder="Ingresa tu numero de teléfono" required>
-            </div>
-            <div class="form-group">
-              <label>Email:</label>
-              <input type="email" class="form-control" id="email"  name="email" placeholder="Ingresa tu correo electronico" required>
-            </div>
-            <div class="form-group">
-              <label>Mensaje:</label>
-              <textarea class="form-control" id="mensaje" name="mensaje" rows="3"></textarea>
-            </div>
-            <button type="submit" class="btn btn-default">Enviar <i class="icon-after fa fa-chevron-right"></i></button>
-          </form>
-        </div>
-        
-    </section>
-
-
-
-</div>
-
+                <!--end of container-->
+            </section>

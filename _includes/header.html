@@ -12,19 +12,81 @@
                                    \______/
         &copy; {{ site.time | date: '%Y' }} - {{ site.data.global.author.name }}
     -->
-<header id="nav-content" class="vertical-nav nav-white">
-
-  <div class="my-logo">
-      <a href="{{ '/' | prepend: site.baseurl }}"><img src="{{ site.cloudinary.foto }}" alt="{{ site.data.global.author.name }}" /></a>
-    </div>
-    
-    <ul class="menu nav me-nav">
-      {% for item in site.data.nav.navbar %}
-        <li class="menu-item"> <a href="{{ '/' | prepend: site.baseurl }}#{{ item.id }}"> <span>{{ item.title }}</span> <i class="fa fa-{{ item.ico }}"></i> </a>
-        </li>
-      {% endfor %}
-    </ul>
-    
-    <span class="copyright hidden-md">&copy; {{ site.time | date: '%Y' }} <a href="{{ site.data.global.url }}">{{ site.data.global.author.name }}</a> <br />Desarrollado con <a href="http://jekyllrb.com/" target="_blank">Jekyll</a>.</span>
-
-</header>
+	
+<div class="nav-container ">
+            <div class="bar bar--sm visible-xs">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-xs-3 col-sm-2">
+                            <a href="index.html">
+                                <img class="logo logo-dark" alt="logo" src="{{ "/img/logo-dark.png" | prepend: site.baseurl }}" />
+                                <img class="logo logo-light" alt="logo" src="{{ "/img/logo-light.png" | prepend: site.baseurl }}" />
+                            </a>
+                        </div>
+                        <div class="col-xs-9 col-sm-10 text-right">
+                            <a href="#" class="hamburger-toggle" data-toggle-class="#menu1;hidden-xs">
+                                <i class="icon icon--sm stack-interface stack-menu"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <!--end of row-->
+                </div>
+                <!--end of container-->
+            </div>
+            <!--end bar-->
+            <nav id="menu1" class="bar bar--sm bar-1 hidden-xs bar--transparent bar--absolute">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-1 col-sm-2 hidden-xs">
+                            <div class="bar__module">
+                                <a href="index.html">
+                                    <img class="logo logo-dark" alt="logo" src="{{ "/img/logo-dark.png" | prepend: site.baseurl }}" />
+                                    <img class="logo logo-light" alt="logo" src="{{ "/img/logo-light.png" | prepend: site.baseurl }}" />
+                                </a>
+                            </div>
+                            <!--end module-->
+                        </div>
+                        <div class="col-md-11 col-sm-12 text-right text-left-xs text-left-sm">
+                            <div class="bar__module">
+                                <ul class="menu-horizontal text-left">
+									<li><a href="{{ '/' | prepend: site.baseurl }}">Inicio</a></li>
+									<li><a href="{{ '/blog' | prepend: site.baseurl }}">Blog</a></li>
+                                    <li><a href="#">Portafolio</a></li>
+                                    <li class="dropdown">
+                                        <span class="dropdown__trigger">Proyectos</span>
+                                        <div class="dropdown__container">
+                                            <div class="container">
+                                                <div class="row">
+                                                    <div class="dropdown__content col-md-2 col-sm-4">
+                                                        <ul class="menu-vertical">
+															<li>
+                                                                <a href="#">Pybot</a>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                    <!--end dropdown content-->
+                                                </div>
+                                                <!--end row-->
+                                            </div>
+                                        </div>
+                                        <!--end dropdown container-->
+                                    </li>
+								</ul>
+                            </div>
+                            <!--end module-->
+                            <div class="bar__module">
+                                <a class="btn btn--sm type--uppercase" href="#">
+                                    <span class="btn__text">
+                                        Contactar
+                                    </span>
+                                </a>
+                            </div>
+                            <!--end module-->
+                        </div>
+                    </div>
+                    <!--end of row-->
+                </div>
+                <!--end of container-->
+            </nav>
+            <!--end bar-->
+        </div>
