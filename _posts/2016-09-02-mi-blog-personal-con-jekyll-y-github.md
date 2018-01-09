@@ -24,14 +24,14 @@ Además de esto, [Jekyll](http://jekyllrb.com/) esta desarrollado en [Ruby](http
 Personalmente la razón de migrar mi sitio a [Jekyll](http://jekyllrb.com/) corresponde a 3 razones: 
 
 * Rendimiento de mi sitio: quiero que mi sitio sea lo más rápido posible y no hay nada que sobrepase a archivos estáticos.
-* Experimentación: Quería experimentar algo nuevo, algo diferente a Wordprees, Drupal, con tecnologías que quiero aprender. 
+* Experimentación: Quería experimentar algo nuevo, algo diferente a Wordprees, Drupal, Joomla, con tecnologías que quiero aprender. 
 * Bajo mantenimiento: Una vez configurado [Jekyll](http://jekyllrb.com/) el mantenimiento el literalmente mínimo y puedo enfocarme en escribir más seguido.
 
 ## ¿Cómo lo hice?
 
-En diciembre del año pasado, cuando estaba trabajando en la [Universidad Simón Bolívar](http://usb.ve/) Del Litoral, Las maquinas que están ahí tienes como sistema operativo [Ubuntu](http://www.ubuntu.com/), y ahí comenzó mi intriga por saber que era y como funcionaba [Jekyll](http://jekyllrb.com/) y duré una par de meses investigando, bueno lo cierto es que entendí como funcionaba y lo dejé por un tiempo.
+En diciembre del año pasado, cuando estaba trabajando en la [Universidad Simón Bolívar](http://usb.ve/) Del Litoral, Las maquinas que están ahí tienen como sistema operativo [Ubuntu](http://www.ubuntu.com/), y ahí comenzó mi intriga por saber que era y como funcionaba [Jekyll](http://jekyllrb.com/), duré un par de semanas investigando sobre el tema, bueno lo cierto es que entendí como funcionaba, pero lo dejé por un tiempo.
 
-Hace unos mese atrás volví a recobrar el interés por [Jekyll](http://jekyllrb.com/) y fui al grano.
+Hace unos mese atrás volví a recobrar el interés por [Jekyll](http://jekyllrb.com/), pero esta vez no perdí el interés.
 
 Lo primero que hice fue clonar el repositorio de [@scotch-io](https://github.com/scotch-io/) `https://github.com/scotch-io/scotch-io.github.io`
 
@@ -40,9 +40,19 @@ git clone https://github.com/scotch-io/scotch-io.github.io thevacs.github.io
 cd thevacs.github.io
 {% endhighlight %}
 
-Estoy clonando el repositorio de [@scotch-io](https://github.com/scotch-io/) a mi carpeta `thevacs.github.io`
+Cloné el repositorio de [@scotch-io](https://github.com/scotch-io/) a mi carpeta `thevacs.github.io`
 
-Obviamente ya tenía instalado [Jekyll](http://jekyllrb.com/) así que solo corrí el comando `jekyll serve`
+Primero necesitaba instalar [Ruby](http://jekyllrb.com/) 
+{% highlight shell %}
+apt install ruby
+{% endhighlight %}
+
+... Unos minutos después instalé [Jekyll](http://jekyllrb.com/)
+{% highlight shell %}
+gem install jekyll
+{% endhighlight %}
+
+Lo inicié con el comando `jekyll serve`
 {% highlight console %}
 Configuration file: /home/vacs/scotch-io.github.io/_config.yml
             Source: .
@@ -56,7 +66,7 @@ Configuration file: /home/vacs/scotch-io.github.io/_config.yml
   Server running... press ctrl-c to stop.
 {% endhighlight %}
 
-Hice alguna modificaciones en `_config.yml` y agregue mi url y esas cosas.
+Hice muchas modificaciones en `_config.yml` y agregue mis url y esas cosas.
 Seguí desarrollando en el diseño y algunas otras cosas más.
 
 ## ¿Y Github?
