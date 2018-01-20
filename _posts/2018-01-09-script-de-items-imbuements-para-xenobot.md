@@ -54,7 +54,7 @@ function CantidadMonstruo(monstruoList)
             end
         end
     end
-    return count
+    return cantidad
 end
 
 
