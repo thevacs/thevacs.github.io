@@ -1,45 +1,70 @@
 ---
 layout: inicio
 ---
-<section class="cover height-100 imagebg" data-overlay="4">
-                <div class="background-image-holder">
-                    <img alt="background" src="{{ "img/recruitment-1.jpg" | prepend: site.baseurl }}" />
+<div class="main-container">
+            <section class="imageblock switchable feature-large">
+                <div class="imageblock__content col-lg-6 col-md-4 pos-right">
+                    <div class="background-image-holder">
+                        <img alt="image" src="{{ site.cloudinary.bg1 }}" />
+                    </div>
                 </div>
-                <div class="container pos-vertical-center">
+                <div class="container">
                     <div class="row">
-                        <div class="col-sm-8 col-md-5">
-                            <h1>
-                                {{ site.data.global.author.name }}
-                            </h1>
+                        <div class="col-lg-5 col-md-7">
+                            <h1>Juan Rivas</h1>
+                            <p class="lead">Desarrollo de aplicaciones web, disponible para contratar. Vargas, Venezuela
+                                <img alt="flag" src="https://res.cloudinary.com/vacs/image/upload/c_scale,h_64/v1535783493/flag-for-venezuela_1f1fb-1f1ea_ozv1dh.png" />.
+                            </p>
                             <ul class="social-list list-inline list--hover">
-                                <li>
-                                    <a data-tooltip="Twitter @the_vacs"  href="{{ site.data.global.author.twitter }}" target="_blank">
-                                        <i class="socicon socicon-twitter icon icon--xs"></i>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a data-tooltip="Facebook @thevacs"  href="{{ site.data.global.author.facebook }}" target="_blank">
-                                        <i class="socicon socicon-facebook icon icon--xs"></i>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a  data-tooltip="Github @thevacs" href="{{ site.data.global.author.github }}" target="_blank">
+                                <li data-tooltip="Github @thevacs">
+                                    <a target="_blank" href="https://github.com/thevacs">
                                         <i class="socicon socicon-github icon icon--xs"></i>
                                     </a>
                                 </li>
-                                <li>
-                                    <a data-tooltip="Instagram @thevacs" href="{{ site.data.global.author.instagram }}" target="_blank">
+                                <li data-tooltip="Twitter @the_vacs">
+                                    <a target="_blank" href="https://twitter.com/The_VaCs">
+                                        <i class="socicon socicon-twitter icon icon--xs"></i>
+                                    </a>
+                                </li>
+                                <li data-tooltip="Facebook @thevacs">
+                                    <a target="_blank" href="https://www.facebook.com/thevacs">
+                                        <i class="socicon socicon-facebook icon icon--xs"></i>
+                                    </a>
+                                </li>
+                                <li data-tooltip="Instagram @thevacs">
+                                    <a target="_blank" href="https://instagram.com/thevacs/">
                                         <i class="socicon socicon-instagram icon icon--xs"></i>
                                     </a>
                                 </li>
                             </ul>
-                            <p class="lead">
-								{{ site.data.global.author.bio }}
-                            </p>
-                            <a class="btn btn--primary type--uppercase" href="#">
-                                <span class="btn__text">
-                                    Ponerse en contacto
-                                </span>
+                            <div class="heading-block"></div>
+                            <a href="#" class="block">
+                                <div class="feature feature--featured boxed boxed--border bg--secondary">
+                                    <span class="label">Actual</span>
+                                    <h5>Universidad Simón Bolívar</h5>
+                                    <p>
+                                        Desarrollador principal para la Coordinación de Ingeniería de Información de la Sede del Litoral.
+                                    </p>
+                                </div>
+                                <!--end feature-->
+                            </a>
+                            <a href="#" class="block">
+                                <div class="feature boxed boxed--border bg--secondary">
+                                    <h5>SiCe</h5>
+                                    <p>
+                                        Sistema de Control de Estudio
+                                    </p>
+                                </div>
+                                <!--end feature-->
+                            </a>
+                            <a href="#" class="block">
+                                <div class="feature boxed boxed--border bg--secondary">
+                                    <h5>Script Xenobot</h5>
+                                    <p>
+                                        Xenobot script for tibia huting based aure-global.com
+                                    </p>
+                                </div>
+                                <!--end feature-->
                             </a>
                         </div>
                     </div>
@@ -47,3 +72,4 @@ layout: inicio
                 </div>
                 <!--end of container-->
             </section>
+        </div>

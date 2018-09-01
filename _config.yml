@@ -32,10 +32,9 @@ gems:
 cloudinary:
   cloud_name: vacs
   cloud_url:  https://res.cloudinary.com/vacs/image/upload/
-  bg1:        https://res.cloudinary.com/vacs/image/upload/c_scale,w_904/v1472784728/bg4_uyql22.jpg
-  bg2:        https://res.cloudinary.com/vacs/image/upload/v1472784662/pic-3_vpyqie.jpg     
-  cv_pdf:     https://res.cloudinary.com/vacs/image/upload/v1472784924/CV_Juan_Rivas_2016_upgxsc.pdf           
-  foto:       https://res.cloudinary.com/vacs/image/upload/v1514320748/20748199_1637170319649287_8712754598881842075_o_f0nwns.jpg           
+  bg1:        https://res.cloudinary.com/vacs/image/upload/c_crop,g_custom/v1472784728/bg4_uyql22.jpg
+  bg2:        https://res.cloudinary.com/vacs/image/upload/v1472784662/pic-3_vpyqie.jpg
+  foto:       https://res.cloudinary.com/vacs/image/upload/v1514320748/20748199_1637170319649287_8712754598881842075_o_f0nwns.jpg
 
 # Conversion
 markdown:    kramdown
@@ -84,4 +83,4 @@ kramdown:
 
 sass:
   sass_dir: _scss
-  style: compressed 
+  style: compressed
