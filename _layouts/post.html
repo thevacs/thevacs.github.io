@@ -3,27 +3,13 @@
 	{% include head.html %}
 	<body class=" ">
 		<a id="inicio"></a>
-		{% include header.html %}
-		<div class="main-container">
-			
-					{% include head_post.html %}	
+			{% include header.html %}
+			<div class="main-container">
+
+					{% include head_post.html %}
 						{{ content }}
-						
+
 						</div>
-                                    <div class="article__share text-center">
-                                        <a class="btn bg--facebook btn--icon" href="#">
-                                            <span class="btn__text">
-                                                <i class="socicon socicon-facebook"></i>
-                                                Compartir en Facebook
-                                            </span>
-                                        </a>
-                                        <a class="btn bg--twitter btn--icon" href="#">
-                                            <span class="btn__text">
-                                                <i class="socicon socicon-twitter"></i>
-                                                Compartir en Twitter
-                                            </span>
-                                        </a>
-                                    </div>
                                 </div>
                             </div>
                             <!--end of row-->
@@ -33,7 +19,7 @@
                 </article>
             </section>
 			{% include comentarios.html %}
-	
+
 			{% include footer.html %}
 		</div>
 		<a class="back-to-top inner-link" href="#inicio" data-scroll-class="100vh:active">
@@ -42,4 +28,3 @@
 		{% include js.html %}
 	</body>
 </html>
-
